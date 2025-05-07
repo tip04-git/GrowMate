@@ -1,0 +1,65 @@
+.mood-container {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+    margin: 40px auto;
+    max-width: 500px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.5s ease-in;
+  }
+  
+  .mood-heading {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .mood-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .mood-card {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    padding: 15px 20px;
+    width: 80px;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .mood-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  
+  .mood-card.selected {
+    border: 2px solid #00ffe1;
+    box-shadow: 0 0 12px #00ffe1aa;
+    background: rgba(0, 255, 225, 0.15);
+  }
+  
+  .mood-emoji {
+    font-size: 1.8rem;
+    display: block;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

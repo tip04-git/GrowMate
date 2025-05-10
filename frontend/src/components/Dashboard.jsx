@@ -1,6 +1,6 @@
 import React from 'react';
 import QuoteDisplay from './QuoteDisplay';
-import AlarmSettings from './AlarmSettings';
+import AlarmSettings from './Alarm';
 import ToDoList from './TodoMaker';
 import TrackerCard from './TrackerCard';
 import MoodTracker from './MoodTracker';
